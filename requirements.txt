@@ -1,0 +1,19 @@
+# ── Core ─────────────────────────────────────────────────────────────────────
+endee>=0.1.0                        # Endee vector database Python SDK
+
+# ── Embeddings ────────────────────────────────────────────────────────────────
+sentence-transformers>=2.7.0        # all-MiniLM-L6-v2 (local, no API key)
+torch>=2.0.0                        # SentenceTransformers backend
+
+# ── PDF parsing ───────────────────────────────────────────────────────────────
+pypdf>=4.0.0                        # Pure-Python PDF text extraction
+
+# ── LLM providers (install at least one) ─────────────────────────────────────
+openai>=1.30.0                      # OpenAI GPT models
+anthropic>=0.28.0                   # Anthropic Claude models
+
+# ── UI ────────────────────────────────────────────────────────────────────────
+streamlit>=1.35.0                   # Web chat interface
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0                # Load .env files automatically

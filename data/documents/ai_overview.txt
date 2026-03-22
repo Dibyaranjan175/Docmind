@@ -1,0 +1,108 @@
+Introduction to Artificial Intelligence
+=======================================
+
+Artificial Intelligence (AI) refers to the simulation of human intelligence processes by machines, especially computer systems. These processes include learning (the acquisition of information and rules for using the information), reasoning (using rules to reach approximate or definite conclusions), and self-correction.
+
+History of AI
+-------------
+
+The concept of artificial intelligence dates back to ancient myths and folklore, but the modern field of AI research was founded at a workshop at Dartmouth College in the summer of 1956. Early AI research explored topics such as problem solving, symbolic methods, and knowledge representation.
+
+In the 1980s, AI research revived with the commercial success of expert systems, which are programs designed to mimic the decision-making ability of a human expert. During the 1990s, AI research began to see success in a number of areas, including data mining, medical diagnosis, and logistics.
+
+Deep Learning Revolution
+------------------------
+
+The 2010s saw a dramatic transformation in AI through the rise of deep learning. Deep learning is a type of machine learning that trains a computer to perform human-like tasks, such as recognising speech, identifying images, or making predictions.
+
+Deep learning uses a neural network architecture inspired by the human brain. A neural network consists of layers of interconnected nodes or "neurons". Each connection can transmit a signal from one neuron to another. When a neuron receives a signal, it processes it and then signals additional neurons connected to it.
+
+Key breakthrough milestones include:
+
+- 2012: AlexNet wins the ImageNet competition by a large margin, demonstrating the power of convolutional neural networks (CNNs).
+- 2014: Generative Adversarial Networks (GANs) are introduced by Ian Goodfellow.
+- 2017: The Transformer architecture is introduced in the paper "Attention Is All You Need".
+- 2018: BERT (Bidirectional Encoder Representations from Transformers) is released by Google.
+- 2020: GPT-3 is released by OpenAI, demonstrating remarkable language generation capabilities.
+
+Large Language Models
+---------------------
+
+Large Language Models (LLMs) are AI systems trained on vast amounts of text data. They can generate coherent and contextually relevant text, answer questions, summarise documents, translate languages, write code, and much more.
+
+LLMs are built on the Transformer architecture. The key innovation of Transformers is the attention mechanism, which allows the model to focus on different parts of the input sequence when producing each element of the output sequence.
+
+Training an LLM requires enormous computational resources. Models like GPT-4, Claude, and Gemini are trained on trillions of tokens of text using thousands of GPUs over many weeks or months.
+
+Retrieval Augmented Generation
+-------------------------------
+
+Retrieval Augmented Generation (RAG) is a technique that combines the strengths of retrieval-based systems and generative AI. A RAG system:
+
+1. Stores documents as vector embeddings in a vector database.
+2. When a question is asked, converts it to a vector embedding.
+3. Retrieves the most semantically similar document chunks from the vector database.
+4. Provides the retrieved chunks as context to a large language model.
+5. The LLM generates an answer grounded in the retrieved context.
+
+This approach solves a key limitation of LLMs: they can only know what was in their training data. RAG allows LLMs to answer questions about current events, private documents, or specialised knowledge without retraining.
+
+Vector Databases
+----------------
+
+Vector databases are specialised databases designed to store and query high-dimensional vectors efficiently. Unlike traditional databases that search by exact matches, vector databases search by semantic similarity.
+
+Common vector database operations include:
+- Upsert: storing a vector with an associated ID and metadata
+- Query: finding the k most similar vectors to a query vector
+- Delete: removing vectors by ID
+- Filter: restricting searches to vectors matching certain metadata criteria
+
+Popular vector databases include Pinecone, Weaviate, Qdrant, Milvus, and Endee.
+
+Endee is a high-performance open-source vector database designed to handle up to 1 billion vectors on a single node. It uses HNSW (Hierarchical Navigable Small World) indexing for efficient approximate nearest neighbor search and supports INT8 quantization for reduced memory usage.
+
+Applications of AI
+------------------
+
+AI is being applied across virtually every industry:
+
+Healthcare: AI is being used to detect diseases from medical images, predict patient outcomes, discover new drugs, and personalise treatment plans.
+
+Finance: AI powers fraud detection systems, algorithmic trading, credit scoring, and personalised financial advice.
+
+Transportation: Self-driving vehicles use AI for perception, planning, and control. AI also optimises traffic flow and logistics.
+
+Education: Personalised learning systems adapt to individual student needs. AI tutors can provide instant feedback and explanations.
+
+Customer Service: Chatbots and virtual assistants powered by LLMs can handle a wide range of customer inquiries around the clock.
+
+Ethics and Safety
+-----------------
+
+As AI becomes more capable and widespread, important ethical and safety considerations arise:
+
+Bias and Fairness: AI systems can amplify existing biases in training data, leading to unfair outcomes for marginalised groups.
+
+Privacy: AI systems that process personal data raise significant privacy concerns. Regulations like GDPR in Europe and CCPA in California aim to address these concerns.
+
+Transparency: Many AI systems, especially deep learning models, are "black boxes" whose decision-making process is difficult to interpret.
+
+Alignment: Ensuring that AI systems pursue goals that are aligned with human values is a central challenge in AI safety research.
+
+The field of AI ethics is growing rapidly, with researchers, policymakers, and companies working to develop frameworks for responsible AI development and deployment.
+
+Future of AI
+------------
+
+The future of AI is likely to involve continued progress in several directions:
+
+Multimodal AI: Systems that can seamlessly integrate text, images, audio, and video.
+
+Agentic AI: AI systems that can take sequences of actions to accomplish complex goals autonomously.
+
+Efficient AI: Making AI models smaller, faster, and less energy-intensive through techniques like distillation, quantisation, and pruning.
+
+Scientific AI: Using AI to accelerate scientific discovery in fields like biology, chemistry, physics, and materials science.
+
+Most experts believe that AI will continue to transform economies and societies in profound ways in the coming decades. Managing this transformation responsibly is one of the most important challenges facing humanity today.

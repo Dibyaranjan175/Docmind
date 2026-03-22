@@ -1,0 +1,156 @@
+2026-03-22 13:04:59 | INFO     | src.pipeline | Ingesting single file: 'data\sample\ai_overview.txt'
+2026-03-22 13:04:59 | INFO     | src.ingest | Loaded text file 'ai_overview.txt' — 6,963 characters
+2026-03-22 13:04:59 | INFO     | src.ingest | Chunked 'ai_overview.txt' → 18 chunk(s) (size=512, overlap=64)
+2026-03-22 13:04:59 | INFO     | src.pipeline | Embedding 18 chunk(s)…
+2026-03-22 13:05:47 | INFO     | src.embedding | Loading embedding model: 'sentence-transformers/all-MiniLM-L6-v2'
+2026-03-22 13:06:00 | INFO     | src.embedding | Model loaded — output dimension: 384
+2026-03-22 13:06:00 | DEBUG    | src.embedding | Embedding 18 text(s) in batches of 64
+2026-03-22 13:06:00 | DEBUG    | src.embedding | Embedding complete — dim=384
+2026-03-22 13:06:00 | INFO     | src.pipeline | Storing vectors in Endee…
+2026-03-22 13:06:01 | INFO     | src.vectorstore | Connecting to Endee at http://localhost:8080/api/v1
+2026-03-22 13:06:01 | INFO     | src.vectorstore | Endee client initialised
+2026-03-22 13:09:06 | INFO     | src.pipeline | Ingesting single file: 'data\sample\ai_overview.txt'
+2026-03-22 13:09:06 | INFO     | src.ingest | Loaded text file 'ai_overview.txt' — 6,963 characters
+2026-03-22 13:09:06 | INFO     | src.ingest | Chunked 'ai_overview.txt' → 18 chunk(s) (size=512, overlap=64)
+2026-03-22 13:09:06 | INFO     | src.pipeline | Embedding 18 chunk(s)…
+2026-03-22 13:09:19 | INFO     | src.embedding | Loading embedding model: 'sentence-transformers/all-MiniLM-L6-v2'
+2026-03-22 13:09:24 | INFO     | src.embedding | Model loaded — output dimension: 384
+2026-03-22 13:09:24 | DEBUG    | src.embedding | Embedding 18 text(s) in batches of 64
+2026-03-22 13:09:24 | DEBUG    | src.embedding | Embedding complete — dim=384
+2026-03-22 13:09:24 | INFO     | src.pipeline | Storing vectors in Endee…
+2026-03-22 13:09:25 | INFO     | src.vectorstore | Connecting to Endee at http://localhost:8080/api/v1
+2026-03-22 13:09:25 | INFO     | src.vectorstore | Endee client initialised
+2026-03-22 13:09:25 | INFO     | src.vectorstore | Creating Endee index 'docmind_index' (dim=384, cosine, INT8)
+2026-03-22 13:09:25 | INFO     | src.vectorstore | Index 'docmind_index' created successfully
+2026-03-22 13:09:25 | DEBUG    | src.vectorstore | Upserted batch 1 (18 vectors, cumulative=18)
+2026-03-22 13:09:25 | INFO     | src.vectorstore | Upsert complete — 18 vectors stored in Endee
+2026-03-22 13:09:25 | INFO     | src.pipeline | Ingestion complete — 1 doc(s), 18 chunks, 18 vectors
+2026-03-22 13:13:38 | INFO     | src.vectorstore | Connecting to Endee at http://localhost:8080/api/v1
+2026-03-22 13:13:38 | INFO     | src.vectorstore | Endee client initialised
+2026-03-22 13:13:39 | INFO     | src.vectorstore | Creating Endee index 'docmind_index' (dim=384, cosine, INT8)
+2026-03-22 13:24:16 | INFO     | src.pipeline | Ingesting directory: 'data\documents'
+2026-03-22 13:24:16 | INFO     | src.ingest | Found 1 document(s) in 'data\documents'
+2026-03-22 13:24:16 | INFO     | src.ingest | Loaded text file 'ai_overview.txt' — 6,963 characters
+2026-03-22 13:24:16 | INFO     | src.ingest | Chunked 'ai_overview.txt' → 18 chunk(s) (size=512, overlap=64)
+2026-03-22 13:24:16 | INFO     | src.ingest | Total chunks ready for embedding: 18
+2026-03-22 13:24:16 | INFO     | src.pipeline | Embedding 18 chunk(s)…
+2026-03-22 13:24:41 | INFO     | src.embedding | Loading embedding model: 'sentence-transformers/all-MiniLM-L6-v2'
+2026-03-22 13:24:47 | INFO     | src.embedding | Model loaded — output dimension: 384
+2026-03-22 13:24:47 | DEBUG    | src.embedding | Embedding 18 text(s) in batches of 64
+2026-03-22 13:24:48 | DEBUG    | src.embedding | Embedding complete — dim=384
+2026-03-22 13:24:48 | INFO     | src.pipeline | Storing vectors in Endee…
+2026-03-22 13:24:48 | INFO     | src.vectorstore | Connecting to Endee at http://localhost:8080/api/v1
+2026-03-22 13:24:48 | INFO     | src.vectorstore | Endee client initialised
+2026-03-22 13:24:48 | INFO     | src.vectorstore | Creating Endee index 'docmind_index' (dim=384, cosine, INT8)
+2026-03-22 13:28:50 | INFO     | src.pipeline | Ingesting directory: 'data\documents'
+2026-03-22 13:28:50 | INFO     | src.ingest | Found 1 document(s) in 'data\documents'
+2026-03-22 13:28:50 | INFO     | src.ingest | Loaded text file 'ai_overview.txt' — 6,963 characters
+2026-03-22 13:28:50 | INFO     | src.ingest | Chunked 'ai_overview.txt' → 18 chunk(s) (size=512, overlap=64)
+2026-03-22 13:28:50 | INFO     | src.ingest | Total chunks ready for embedding: 18
+2026-03-22 13:28:50 | INFO     | src.pipeline | Embedding 18 chunk(s)…
+2026-03-22 13:29:14 | INFO     | src.embedding | Loading embedding model: 'sentence-transformers/all-MiniLM-L6-v2'
+2026-03-22 13:29:19 | INFO     | src.embedding | Model loaded — output dimension: 384
+2026-03-22 13:29:19 | DEBUG    | src.embedding | Embedding 18 text(s) in batches of 64
+2026-03-22 13:29:20 | DEBUG    | src.embedding | Embedding complete — dim=384
+2026-03-22 13:29:20 | INFO     | src.pipeline | Storing vectors in Endee…
+2026-03-22 13:29:20 | INFO     | src.vectorstore | Connecting to Endee at http://localhost:8080/api/v1
+2026-03-22 13:29:20 | INFO     | src.vectorstore | Endee client initialised
+2026-03-22 13:29:21 | INFO     | src.vectorstore | Index 'docmind_index' already exists, reusing it
+2026-03-22 13:29:21 | INFO     | src.vectorstore | Upsert complete — 18 vectors stored in Endee
+2026-03-22 13:29:21 | INFO     | src.pipeline | Ingestion complete — 1 doc(s), 18 chunks, 18 vectors
+2026-03-22 13:29:33 | INFO     | src.query | Processing question: 'What is Retrieval Augmented Generation?'
+2026-03-22 13:29:33 | DEBUG    | src.embedding | Embedding 1 text(s) in batches of 64
+2026-03-22 13:29:34 | DEBUG    | src.embedding | Embedding complete — dim=384
+2026-03-22 13:29:36 | ERROR    | __main__ | Query error
+Traceback (most recent call last):
+  File "C:\Users\DIBYARANJAN PRUSTY17\Downloads\docmind_pycharm\DocMind — AI-Powered Document Q&A Chatbot\app.py", line 272, in <module>
+    result = answer_question(question=prompt, top_k=int(top_k))
+  File "C:\Users\DIBYARANJAN PRUSTY17\Downloads\docmind_pycharm\DocMind — AI-Powered Document Q&A Chatbot\src\query.py", line 200, in answer_question
+    answer, tokens = _generate_answer(context=context, question=question)
+                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DIBYARANJAN PRUSTY17\Downloads\docmind_pycharm\DocMind — AI-Powered Document Q&A Chatbot\src\query.py", line 138, in _generate_answer
+    return _call_openai(context, question)
+  File "C:\Users\DIBYARANJAN PRUSTY17\Downloads\docmind_pycharm\DocMind — AI-Powered Document Q&A Chatbot\src\query.py", line 78, in _call_openai
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: OPENAI_API_KEY environment variable is not set. Export it before running DocMind.
+2026-03-22 13:35:22 | INFO     | src.pipeline | Ingesting directory: 'data\documents'
+2026-03-22 13:35:22 | INFO     | src.ingest | Found 1 document(s) in 'data\documents'
+2026-03-22 13:35:22 | INFO     | src.ingest | Loaded text file 'ai_overview.txt' — 6,963 characters
+2026-03-22 13:35:22 | INFO     | src.ingest | Chunked 'ai_overview.txt' → 18 chunk(s) (size=512, overlap=64)
+2026-03-22 13:35:22 | INFO     | src.ingest | Total chunks ready for embedding: 18
+2026-03-22 13:35:22 | INFO     | src.pipeline | Embedding 18 chunk(s)…
+2026-03-22 13:35:44 | INFO     | src.embedding | Loading embedding model: 'sentence-transformers/all-MiniLM-L6-v2'
+2026-03-22 13:35:48 | INFO     | src.embedding | Model loaded — output dimension: 384
+2026-03-22 13:35:48 | DEBUG    | src.embedding | Embedding 18 text(s) in batches of 64
+2026-03-22 13:35:50 | DEBUG    | src.embedding | Embedding complete — dim=384
+2026-03-22 13:35:50 | INFO     | src.pipeline | Storing vectors in Endee…
+2026-03-22 13:35:50 | INFO     | src.vectorstore | Connecting to Endee at http://localhost:8080/api/v1
+2026-03-22 13:35:50 | INFO     | src.vectorstore | Endee client initialised
+2026-03-22 13:35:50 | INFO     | src.vectorstore | Index 'docmind_index' already exists, reusing it
+2026-03-22 13:35:50 | INFO     | src.vectorstore | Upsert complete — 18 vectors stored in Endee
+2026-03-22 13:35:50 | INFO     | src.pipeline | Ingestion complete — 1 doc(s), 18 chunks, 18 vectors
+2026-03-22 13:36:13 | INFO     | src.query | Processing question: 'What is Artificial Intelligence?'
+2026-03-22 13:36:13 | DEBUG    | src.embedding | Embedding 1 text(s) in batches of 64
+2026-03-22 13:36:13 | DEBUG    | src.embedding | Embedding complete — dim=384
+2026-03-22 13:36:15 | DEBUG    | src.query | Calling OpenAI model: gpt-4o-mini
+2026-03-22 14:36:48 | INFO     | src.pipeline | Ingesting directory: 'data\documents'
+2026-03-22 14:36:48 | INFO     | src.ingest | Found 1 document(s) in 'data\documents'
+2026-03-22 14:36:48 | INFO     | src.ingest | Loaded text file 'ai_overview.txt' — 6,963 characters
+2026-03-22 14:36:48 | INFO     | src.ingest | Chunked 'ai_overview.txt' → 18 chunk(s) (size=512, overlap=64)
+2026-03-22 14:36:48 | INFO     | src.ingest | Total chunks ready for embedding: 18
+2026-03-22 14:36:48 | INFO     | src.pipeline | Embedding 18 chunk(s)…
+2026-03-22 14:37:14 | INFO     | src.embedding | Loading embedding model: 'sentence-transformers/all-MiniLM-L6-v2'
+2026-03-22 14:37:18 | INFO     | src.embedding | Model loaded — output dimension: 384
+2026-03-22 14:37:18 | DEBUG    | src.embedding | Embedding 18 text(s) in batches of 64
+2026-03-22 14:37:20 | DEBUG    | src.embedding | Embedding complete — dim=384
+2026-03-22 14:37:20 | INFO     | src.pipeline | Storing vectors in Endee…
+2026-03-22 14:37:20 | INFO     | src.vectorstore | Connecting to Endee at http://localhost:8080/api/v1
+2026-03-22 14:37:20 | INFO     | src.vectorstore | Endee client initialised
+2026-03-22 14:37:20 | INFO     | src.vectorstore | Index 'docmind_index' already exists, reusing it
+2026-03-22 14:37:20 | INFO     | src.vectorstore | Upsert complete — 18 vectors stored in Endee
+2026-03-22 14:37:20 | INFO     | src.pipeline | Ingestion complete — 1 doc(s), 18 chunks, 18 vectors
+2026-03-22 14:37:43 | INFO     | src.query | Processing question: 'What is Artificial Intelligence?'
+2026-03-22 14:37:43 | DEBUG    | src.embedding | Embedding 1 text(s) in batches of 64
+2026-03-22 14:37:43 | DEBUG    | src.embedding | Embedding complete — dim=384
+2026-03-22 14:37:45 | DEBUG    | src.query | Calling OpenAI model: gpt-4o-mini
+2026-03-22 14:46:13 | INFO     | src.pipeline | Ingesting directory: 'data\documents'
+2026-03-22 14:46:13 | INFO     | src.ingest | Found 1 document(s) in 'data\documents'
+2026-03-22 14:46:13 | INFO     | src.ingest | Loaded text file 'ai_overview.txt' — 6,963 characters
+2026-03-22 14:46:13 | INFO     | src.ingest | Chunked 'ai_overview.txt' → 18 chunk(s) (size=512, overlap=64)
+2026-03-22 14:46:13 | INFO     | src.ingest | Total chunks ready for embedding: 18
+2026-03-22 14:46:13 | INFO     | src.pipeline | Embedding 18 chunk(s)…
+2026-03-22 14:46:36 | INFO     | src.embedding | Loading embedding model: 'sentence-transformers/all-MiniLM-L6-v2'
+2026-03-22 14:46:41 | INFO     | src.embedding | Model loaded — output dimension: 384
+2026-03-22 14:46:41 | DEBUG    | src.embedding | Embedding 18 text(s) in batches of 64
+2026-03-22 14:46:42 | DEBUG    | src.embedding | Embedding complete — dim=384
+2026-03-22 14:46:42 | INFO     | src.pipeline | Storing vectors in Endee…
+2026-03-22 14:46:42 | INFO     | src.vectorstore | Connecting to Endee at http://localhost:8080/api/v1
+2026-03-22 14:46:42 | INFO     | src.vectorstore | Endee client initialised
+2026-03-22 14:46:42 | INFO     | src.vectorstore | Index 'docmind_index' already exists, reusing it
+2026-03-22 14:46:42 | INFO     | src.vectorstore | Upsert complete — 18 vectors stored in Endee
+2026-03-22 14:46:42 | INFO     | src.pipeline | Ingestion complete — 1 doc(s), 18 chunks, 18 vectors
+2026-03-22 14:47:00 | INFO     | src.query | Processing question: 'What is Artificial Intelligence?'
+2026-03-22 14:47:00 | DEBUG    | src.embedding | Embedding 1 text(s) in batches of 64
+2026-03-22 14:47:00 | DEBUG    | src.embedding | Embedding complete — dim=384
+2026-03-22 14:49:56 | INFO     | src.pipeline | Ingesting directory: 'data\documents'
+2026-03-22 14:49:56 | INFO     | src.ingest | Found 1 document(s) in 'data\documents'
+2026-03-22 14:49:56 | INFO     | src.ingest | Loaded text file 'ai_overview.txt' — 6,963 characters
+2026-03-22 14:49:56 | INFO     | src.ingest | Chunked 'ai_overview.txt' → 18 chunk(s) (size=512, overlap=64)
+2026-03-22 14:49:56 | INFO     | src.ingest | Total chunks ready for embedding: 18
+2026-03-22 14:49:56 | INFO     | src.pipeline | Embedding 18 chunk(s)…
+2026-03-22 14:50:19 | INFO     | src.embedding | Loading embedding model: 'sentence-transformers/all-MiniLM-L6-v2'
+2026-03-22 14:50:24 | INFO     | src.embedding | Model loaded — output dimension: 384
+2026-03-22 14:50:24 | DEBUG    | src.embedding | Embedding 18 text(s) in batches of 64
+2026-03-22 14:50:25 | DEBUG    | src.embedding | Embedding complete — dim=384
+2026-03-22 14:50:25 | INFO     | src.pipeline | Storing vectors in Endee…
+2026-03-22 14:50:25 | INFO     | src.vectorstore | Connecting to Endee at http://localhost:8080/api/v1
+2026-03-22 14:50:25 | INFO     | src.vectorstore | Endee client initialised
+2026-03-22 14:50:25 | INFO     | src.vectorstore | Index 'docmind_index' already exists, reusing it
+2026-03-22 14:50:25 | INFO     | src.vectorstore | Upsert complete — 18 vectors stored in Endee
+2026-03-22 14:50:25 | INFO     | src.pipeline | Ingestion complete — 1 doc(s), 18 chunks, 18 vectors
+2026-03-22 14:50:45 | INFO     | src.query | Processing question: 'What is Artificial Intelligence?'
+2026-03-22 14:50:45 | DEBUG    | src.embedding | Embedding 1 text(s) in batches of 64
+2026-03-22 14:50:45 | DEBUG    | src.embedding | Embedding complete — dim=384
+2026-03-22 14:50:46 | INFO     | src.query | Answer generated — 590 tokens used
